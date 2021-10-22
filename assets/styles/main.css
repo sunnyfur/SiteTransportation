@@ -1,0 +1,357 @@
+@import url("/assets/styles/normalize.css");
+@import url("/assets/styles/colours.css");
+@import url("/assets/styles/fonts.css");
+
+@import url("/assets/styles/animation.css");
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+/* привязка к сетке */
+.content {
+    width: 1108px;
+    /* border: solid white 1px; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-line {
+    padding: 16px 0px;
+}
+
+.navHeader {
+    flex-grow: 1;
+    /* border: solid 1px white; */
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    padding: 45px 0px;
+}
+
+.navHeader>a {
+    margin: 0px 20px;
+}
+
+#placeholder {
+    margin-right: auto;
+}
+
+
+
+
+#first-screen {
+
+
+    background-image: url("/assets/img/first_screen.png");
+
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 70vh;
+    /*  */
+    display: flex;
+
+}
+
+#first-screen-content {
+    width: 50%;
+    text-align: center;
+
+    margin: auto;
+
+    padding: 20px;
+
+    border: var(--gold) solid thin
+}
+
+
+
+
+
+.logo {
+
+    background-image: url("/assets/img/logo.svg");
+    background-repeat: no-repeat;
+
+    width: 170px;
+    height: 46px;
+
+
+    /*Как правильно задать размер?*/
+}
+
+
+
+
+
+
+
+.horizontal-line {
+
+    height: 6px;
+    width: 90px;
+}
+
+.button {
+
+    padding: 18px 48px 19px 48px;
+    margin: 50px 0px 50px 0px;
+}
+
+
+
+
+
+
+.some-text {
+    width: 80%;
+
+}
+
+
+
+/*Грузоперевозки*/
+#services {
+    /* border: solid white 1px; */
+    /* position: relative; */
+    height: 561px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+#services .content {
+    position: absolute;
+    margin: auto;
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+
+#services .greyRect {
+    width: 30%;
+    height: 100%;
+
+}
+
+#services .content .text-block {
+
+    width: 40%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+}
+
+.button {
+    margin-bottom: auto;
+    align-self: flex-start;
+}
+
+/******************************/
+
+/*Услуги*/
+#all-services .content {
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.services {
+
+
+    display: flex;
+
+    /* align-items: stretch;
+    align-content: stretch; */
+    flex-flow: row wrap;
+}
+
+.service-item {
+    /* flex: 1 1 276px; */
+    width: 276px;
+    height: 180px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.circle {
+
+    display: flex;
+    justify-content: space-evenly;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+
+
+.service-item:hover img {
+
+    filter: invert(75%);
+}
+
+
+/*******************************/
+
+#about-company {
+    height: 70vh;
+    /* border: solid white 1px; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+#about-company .content {
+
+    margin: auto;
+    /* border: solid white 1px; */
+    /* position: relative; */
+    /* height: 561px; */
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+}
+
+
+#about-company .greyRect {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+.text-block {
+    width: 45%;
+}
+
+/* #about-company .some-text {
+    width: 55%;
+
+} */
+
+#about-company .services {
+    /* border: 1px white solid; */
+    /* width: 60%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-left: auto;
+    flex-basis: 45%;
+    /* height: 321px; */
+    /* border: white solid; 1080px*/
+
+}
+
+#about-company .blocks {
+    /* flex: 0 0 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    width: 200px;
+    height: 160px;
+
+
+}
+
+#about-company .blocks>* {
+    margin: auto;
+}
+
+.imgBlock {
+    background-image: url("/assets/img/car2.png");
+    /* height: 160px; */
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-map {
+    background-image: url("/assets/img/maps.png");
+
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+
+}
+
+
+
+/* секция футера*/
+.footerAdress {
+
+    /* border: solid white 1px; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+
+    height: 60px;
+
+
+}
+
+.footerAdress p {
+    /* border: solid 1px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    /* flex-basis: 50%; */
+}
+
+/* логотип в футоре другого цвета */
+.top-line .logo {
+    filter: invert(75%);
+}
+
+#about-company,
+#maps,
+#all-services {
+    margin-top: 120px;
+}

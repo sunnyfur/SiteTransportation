@@ -1,0 +1,11 @@
+#placeholder:hover img {
+    animation: _img 3s linear infinite;
+}
+
+@keyframes _img {
+
+    100% {
+        -webkit-transform: rotateY(360deg);
+
+    }
+}

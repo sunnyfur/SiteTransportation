@@ -1,0 +1,57 @@
+:root {
+    --dark: #2F343A;
+    --gold: #C8A35F;
+    --mediumDark: #393F47;
+    --white: #FFFFFF;
+    --black: #000;
+    --gray: #C4C4C4;
+    /* --dark75: */
+}
+
+body,
+a {
+    color: var(--white);
+}
+
+body {
+    background-color: var(--dark);
+}
+
+.button:hover {
+
+    filter: invert(75%);
+}
+
+
+
+.top-line,
+.horizontal-line,
+.button,
+.service-item:hover {
+    background-color: var(--gold);
+}
+
+.greyRect,
+.service-item {
+
+    background-color: var(--mediumDark);
+}
+
+
+
+#about-company .blocks {
+
+    background-color: var(--white);
+    border: var(--gold) solid thin;
+    color: var(--dark);
+
+}
+
+/* .service-item:hover */
+.circle {
+    background-color: var(--mediumDark);
+}
+
+.service-item:hover .circle {
+    background-color: var(--white);
+}

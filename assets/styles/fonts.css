@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/assets/fonts/Roboto-Regular.ttf");
+}
+
+* {
+    font-family: 'Roboto', Arial, serif;
+
+}
+
+.top-line,
+address {
+    font-style: normal;
+    font-size: 13px;
+}
+
+a {
+
+    font-weight: normal;
+    text-decoration: none;
+}
+
+nav a:hover,
+.top-line a:hover {
+    text-decoration: underline;
+}
+
+
+
+h1,
+h2,
+a,
+#about-company .blocks :nth-child(1) {
+    letter-spacing: 0.05cm;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+#about-company .some-text {
+    font-size: 16px;
+}
+
+.footerAdress {
+    font-size: 14px;
+}
+
+.button {
+    font-size: 16px;
+}
+
+nav {
+    line-height: 45px;
+}
+
+
+h1,
+#about-company .blocks :nth-child(1) {
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: bold;
+    margin-top: 23px;
+    margin-bottom: auto;
+}
+
+
+#about-company .blocks :nth-child(2) {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05cm;
+
+}
+
+#about-company .blocks :nth-child(3) {
+    font-size: 12px;
+    line-height: 14px;
+
+
+}
